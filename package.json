@@ -1,0 +1,23 @@
+{
+  "name": "knightspoker",
+  "version": "1.0.0",
+  "description": "SAFe poker stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/index.ts -p [ tsify --noImplicitAny ] > wwwroot/js/index.js"
+  },
+  "author": "Bryton Kinney",
+  "license": "MIT",
+  "dependencies": {
+    "@microsoft/signalr": "^3.1.3",
+    "@types/node": "^13.9.5",
+    "tsify": "^4.0.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0"
+  }
+}

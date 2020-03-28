@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div id="retro" class="row">
+        <div class="col">
+            <h4>Start Doing</h4>
+            <ul id="startDoingList"></ul>
+        </div>
+        <div class="col">
+            <h4>Stop Doing</h4>
+            <ul id="stopDoingList"></ul>
+        </div>
+        <div class="col">
+            <h4>Continue Doing</h4>
+            <ul id="continueDoingList"></ul>
+        </div>
+    </div>
+    <div id="inputs" class="row">
+        <div class="col">
+            <label for="username">Username</label>
+            <input class="form-control" name="username" id="username" type="text" />
+        </div>
+        <div class="col">
+            <label for="messageInput">Message</label>
+            <textarea class="form-control" name="messageInput" id="messageInput"></textarea>
+        </div>
+        <div class="col">
+            <label for="category">Category</label>
+            <select class="form-control" name="category" id="category">
+                <option value="1">Start Doing</option>
+                <option value="2">Stop Doing</option>
+                <option value="3">Continue Doing</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary" id="sendButton">Send</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" id="clearButton">Clear Board</button>
+        </div>
+    </div>
+</div>
+<script src="~/js/index.js"></script>

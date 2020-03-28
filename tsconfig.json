@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "outDir": "wwwroot/js"
+    },
+    "files": [
+        "src/index.ts"
+    ]
+}
